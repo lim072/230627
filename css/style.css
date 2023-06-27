@@ -1,0 +1,181 @@
+.header-tab-menu {
+  position: fixed;
+  top: -120px;
+  width: 100%;
+  height: 200px;
+  background-color: #fff;
+  z-index: 5;
+  transition: 0.3s;
+}
+.header-tab-menu .main-wrap {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+.header-tab-menu .main-wrap #gnb {
+  display: flex;
+  text-align: center;
+}
+.header-tab-menu .main-wrap #gnb li {
+  width: 200px;
+  height: 40px;
+}
+.header-tab-menu .main-wrap #gnb li a {
+  font: bold 16px/40px "arial";
+  color: #333;
+  padding: 10px 10px;
+  cursor: pointer;
+  height: 50px;
+}
+.header-tab-menu .main-wrap #gnb li a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.header-tab-menu .main-wrap #gnb li ul li {
+  padding: 5px 10px;
+  font-size: 13px;
+  color: #767676;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.header-tab-menu .main-wrap #gnb li ul li:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #333;
+}
+
+.header {
+  width: 100%;
+  height: 130px;
+  position: fixed;
+  border-bottom: 2px solid rgb(13, 182, 236);
+  background-color: #fff;
+  z-index: 10;
+  transition: 0.3s;
+}
+.header .main-wrap {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+.header .main-wrap .top-bar {
+  width: 100%;
+  height: 60%;
+  display: flex;
+}
+.header .main-wrap .top-bar .left {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header .main-wrap .top-bar .left .bars {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+}
+.header .main-wrap .top-bar .left .bars:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.header .main-wrap .top-bar .center {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header .main-wrap .top-bar .center .logo {
+  width: 80px;
+  margin: 0 auto;
+}
+.header .main-wrap .top-bar .center .logo img {
+  width: 100%;
+}
+.header .main-wrap .top-bar .right {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header .main-wrap .top-bar .right .search-icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+}
+.header .main-wrap .top-bar .right .search-icon img {
+  width: 100%;
+}
+.header .main-wrap .top-bar .right .search-icon:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.header .main-wrap .top-bar .right .subscribe {
+  padding: 8px 20px;
+  border: 2px solid rgb(13, 182, 236);
+  font-size: 13px;
+  transition: 0.2s;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.header .main-wrap .top-bar .right .subscribe:hover {
+  background-color: rgb(13, 182, 236);
+  color: #fff;
+}
+.header .main-wrap .bottom-bar {
+  width: 100%;
+  height: 40%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  line-height: 50px;
+}
+.header .main-wrap .bottom-bar a {
+  width: 200px;
+  height: 50px;
+  margin: 0 10px;
+  padding: 5px 10px;
+  color: #333;
+  transition: 0.2s;
+  position: relative;
+}
+.header .main-wrap .bottom-bar a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  transform: translateX(-50%) scaleX(0%);
+  left: 50%;
+  bottom: 5px;
+  width: 90%;
+  border-bottom: 10px solid #a9ff47;
+  transition: 0.3s;
+  z-index: -1;
+  border-radius: 50%;
+}
+.header .main-wrap .bottom-bar a:hover::before {
+  transform: translateX(-50%) scaleX(100%);
+}
+
+.container {
+  width: 100%;
+  height: 200vh;
+  background-color: #aaa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
